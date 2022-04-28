@@ -22,3 +22,11 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 require __DIR__.'/auth.php';
+
+Route::group(['namespace' => 'App\Http\Controllers'], function(){
+
+    Route::get('{code}', 'UrlController@show')->name('url.show');
+
+    Route::post('url', 'UrlController@store')->name('url.store');
+
+});
