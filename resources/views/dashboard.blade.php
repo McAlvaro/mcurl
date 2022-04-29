@@ -12,12 +12,12 @@
                     <div class="flex">
                         <input id="long_url" type="text" placeholder="Pegar Url Aquí" class="w-full px-4 py-3 rounded">
 
-                        <button class="bg-gray-800 ml-4 w-auto px-6 py-3 font-semibold text-white rounded"> <span>Acortar</span> </button>
+                        <button class="bg-gray-800 ml-4 w-auto px-6 py-3 font-semibold text-white rounded" onclick="shorter.short_url()" > <span>Acortar</span> </button>
 
                     </div>
 
                     <div id="short_url_container" class="flex py-5" style="display: none;">
-                        <input id="short_url" type="text" placeholder="" class="w-full px-4 py-3 rounded">
+                        <input id="short_url" type="text" placeholder="" class="w-full px-4 py-3 rounded" onclick="shorter.copy_url()">
                     </div>
 
                 </div>
