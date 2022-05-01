@@ -1,0 +1,64 @@
+.container{
+    @apply max-w-7xl mx-auto px-4
+}
+
+@media(min-width:640px){
+    .container{
+         @apply px-6;
+    }
+}
+
+@media(min-width:1024px){
+    .container{
+         @apply px-8;
+    }
+}
+.m-bg-primary {
+    background-color: #102131 !important;
+}
+
+.m-bg-dark-primary {
+    background-color: #101F2D !important;
+}
+
+.m-bg-primary-1 {
+    background-color: #1F2B44 !important;
+}
+
+.m-bg-primary-2 {
+    background-color: #253659 !important;
+}
+
+.m-text-primary {
+    color: white !important;
+}
+
+.m-text-secondary {
+    color: #7887A7 !important;
+}
+
+.hover\:m-bg-primary-1:hover {
+    
+    background-color: #1F2B44;
+}
+
+.hover\:m-text-primary:hover {
+    color: white !important;
+}
+
+.m-rounded-full {
+    border-radius: 999px;
+}
+
+.m-w-50 {
+    width: 50%;
+}
+
+.m-container{
+    max-width: 80rem ;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+}
