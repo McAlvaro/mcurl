@@ -10870,6 +10870,39 @@ select {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.container {
+  width: 100%;
+}
+@media (min-width: 640px) {
+
+  .container {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+
+  .container {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+
+  .container {
+    max-width: 1280px;
+  }
+}
+@media (min-width: 1536px) {
+
+  .container {
+    max-width: 1536px;
+  }
+}
 .sr-only {
   position: absolute;
   width: 1px;
@@ -10899,6 +10932,9 @@ select {
 }
 .right-0 {
   right: 0px;
+}
+.bottom-0 {
+  bottom: 0px;
 }
 .top-0 {
   top: 0px;
@@ -10949,6 +10985,21 @@ select {
 .ml-2 {
   margin-left: 0.5rem;
 }
+.mr-1 {
+  margin-right: 0.25rem;
+}
+.ml-7 {
+  margin-left: 1.75rem;
+}
+.mt-7 {
+  margin-top: 1.75rem;
+}
+.ml-10 {
+  margin-left: 2.5rem;
+}
+.mt-10 {
+  margin-top: 2.5rem;
+}
 .mr-2 {
   margin-right: 0.5rem;
 }
@@ -10960,9 +11011,6 @@ select {
 }
 .-mt-px {
   margin-top: -1px;
-}
-.mr-1 {
-  margin-right: 0.25rem;
 }
 .block {
   display: block;
@@ -11002,6 +11050,9 @@ select {
 }
 .h-full {
   height: 100%;
+}
+.h-9 {
+  height: 2.25rem;
 }
 .min-h-screen {
   min-height: 100vh;
@@ -11185,9 +11236,15 @@ select {
   --tw-bg-opacity: 1;
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
 }
+.bg-transparent {
+  background-color: transparent;
+}
 .bg-indigo-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(238 242 255 / var(--tw-bg-opacity));
+}
+.bg-gradient-to-tr {
+  background-image: linear-gradient(to top right, var(--tw-gradient-stops));
 }
 .fill-current {
   fill: currentColor;
@@ -11250,6 +11307,14 @@ select {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
 }
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+.py-2\.5 {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
 .pt-6 {
   padding-top: 1.5rem;
 }
@@ -11273,6 +11338,9 @@ select {
 }
 .pr-4 {
   padding-right: 1rem;
+}
+.pl-1 {
+  padding-left: 0.25rem;
 }
 .pt-8 {
   padding-top: 2rem;
@@ -11436,6 +11504,9 @@ select {
 .ring-opacity-5 {
   --tw-ring-opacity: 0.05;
 }
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
 .transition {
   transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -11499,6 +11570,9 @@ select {
 .m-text-secondary {
     color: #7887A7 !important;
 }
+.m-text-special {
+    color: #2A4560;
+}
 .hover\:m-bg-primary-1:hover {
     
     background-color: #1F2B44;
@@ -11519,6 +11593,67 @@ select {
     padding-left: 1rem;
     padding-right: 1rem;
 
+}
+.m-from-pink {
+  --tw-gradient-from: #f7618b;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(247 97 139 / 0));
+}
+.m-to-blue {
+  --tw-gradient-to: #2a7aff;
+}
+.m-h-3r {
+    height: 30rem;
+}
+#shadow-first {
+    position: absolute;
+    z-index: -1;
+    left: 53.77%;
+    right: 3.95%;
+    top: 50.2%;
+    bottom: 5.7%;
+   
+    height: 10rem;
+    width: 27rem;
+    
+    background: linear-gradient(87.66deg, #A24598 3.53%, #F7618B 89.8%, #2A7AFF 100.6%);
+    mix-blend-mode: normal;
+    opacity: 0.75;
+    filter: blur(135.914px);
+}
+#shadow-secondary {
+    position: absolute;
+    z-index: -1;
+    left: 43.82%;
+    right: 0.01%;
+    top: 35.52%;
+    bottom: 5.02%;
+
+    height: 10rem;
+    width: 20rem;
+    
+    background: linear-gradient(87.66deg, #A24598 3.53%, #F7618B 79.8%, #2A7AFF 100.6%);
+    mix-blend-mode: normal;
+    opacity: 0.15;
+    filter: blur(101.394px);
+}
+#shape-first {
+    position: absolute;
+    z-index: -2;
+    top: 0px;
+    left: 0px;
+    height:100vh;
+    width: 100%;
+}
+#shape-two {
+    position: absolute;
+    z-index: -3;
+    top: 0px;
+    left:  0px;
+    height: 100vh;
+    width: 100%;
+}
+.fixed-svg-height {
+    max-height: -webkit-fill-available;
 }
 .hover\:border-gray-300:hover {
   --tw-border-opacity: 1;
@@ -11735,6 +11870,17 @@ select {
 
   .sm\:pt-0 {
     padding-top: 0px;
+  }
+}
+@media (min-width: 768px) {
+
+  .md\:pl-0 {
+    padding-left: 0px;
+  }
+
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 @media (min-width: 1024px) {

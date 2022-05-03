@@ -35,10 +35,15 @@
                              </li>
                         </ol>
                     </div>
+                    <div class="ml-7 mt-7">
+                        <button class="m-text-primary text-xl font-semibold m-rounded-full px-7 py-2.5 text-center bg-gradient-to-tr m-from-pink m-to-blue  " >Get Started for Free</button>
+                    </div>
                </div>  
            </div>
            <div class="m-w-50">
-                
+                <div id="shadow-first"></div>
+                <div id="shadow-secondary"></div>
+               <img id="laptop-img" class="ml-10 m-h-3r w-auto" src="{{ Storage::url('Laptop.png') }}" alt=""> 
            </div>
         </div>
     </div>

@@ -1,4 +1,4 @@
-<nav class="m-bg-primary">
+<nav class="bg-transparent">
     <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div class="relative flex items-center justify-between h-16">
             {{-- <div class="absolute inset-y-0 left-0 flex items-center sm:hidden"> --}}
@@ -16,11 +16,11 @@
                 <div class="hidden sm:block sm:ml-6">
                     <div class=" flex space-x-4">
                         <a href="#" class="m-bg-primary-1 m-text-secondary px-3 py-2 rounded-md text-sm font-medium" aria-current="page" >Home</a>
-                        <a href="#" class="m-bg-primary m-text-secondary px-3 py-2 rounded-md text-sm font-medium hover:m-bg-primary-1 hover:m-text-primary" >My URLs</a>
-                        <a href="#" class="m-bg-primary m-text-secondary px-3 py-2 rounded-md text-sm font-medium hover:m-bg-primary-1 hover:m-text-primary" >Features</a>
+                        <a href="#" class="bg-transparent m-text-secondary px-3 py-2 rounded-md text-sm font-medium hover:m-bg-primary-1 hover:m-text-primary" >My URLs</a>
+                        <a href="#" class="bg-transparent m-text-secondary px-3 py-2 rounded-md text-sm font-medium hover:m-bg-primary-1 hover:m-text-primary" >Features</a>
                         @auth
                         
-                        <a href="#" class="m-bg-primary m-text-secondary px-3 py-2 rounded-md text-sm font-medium hover:m-bg-primary-1 hover:m-text-primary" >Account</a>
+                        <a href="#" class="bg-transparent m-text-secondary px-3 py-2 rounded-md text-sm font-medium hover:m-bg-primary-1 hover:m-text-primary" >Account</a>
 
                         <div class="h-8 w-8 m-bg-primary-2 m-rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white focus:ring-offset-gray-800">
                         <a href="#" >
@@ -29,8 +29,8 @@
                         </div>
                         @else
 
-                        <a href="#" class="m-bg-primary m-text-secondary px-3 py-2 rounded-md text-sm font-medium hover:m-bg-primary-1 hover:m-text-primary" >Sign Up</a>
-                        <a href="#" class="m-bg-primary m-text-secondary px-3 py-2 rounded-md text-sm font-medium hover:m-bg-primary-1 hover:m-text-primary" >Sign In</a>
+                        <a href="#" class="bg-transparent m-text-secondary px-3 py-2 rounded-md text-sm font-medium hover:m-bg-primary-1 hover:m-text-primary" >Sign Up</a>
+                        <a href="#" class="bg-transparent m-text-secondary px-3 py-2 rounded-md text-sm font-medium hover:m-bg-primary-1 hover:m-text-primary" >Sign In</a>
 
                         @endauth
                     </div>

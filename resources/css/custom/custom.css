@@ -37,6 +37,10 @@
     color: #7887A7 !important;
 }
 
+.m-text-special {
+    color: #2A4560;
+}
+
 .hover\:m-bg-primary-1:hover {
     
     background-color: #1F2B44;
@@ -61,4 +65,73 @@
     padding-left: 1rem;
     padding-right: 1rem;
 
+}
+
+.m-from-pink {
+  --tw-gradient-from: #f7618b;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(247 97 139 / 0));
+}
+
+.m-to-blue {
+  --tw-gradient-to: #2a7aff;
+}
+
+.m-h-3r {
+    height: 30rem;
+}
+
+#shadow-first {
+    position: absolute;
+    z-index: -1;
+    left: 53.77%;
+    right: 3.95%;
+    top: 50.2%;
+    bottom: 5.7%;
+   
+    height: 10rem;
+    width: 27rem;
+    
+    background: linear-gradient(87.66deg, #A24598 3.53%, #F7618B 89.8%, #2A7AFF 100.6%);
+    mix-blend-mode: normal;
+    opacity: 0.75;
+    filter: blur(135.914px);
+}
+
+#shadow-secondary {
+    position: absolute;
+    z-index: -1;
+    left: 43.82%;
+    right: 0.01%;
+    top: 35.52%;
+    bottom: 5.02%;
+
+    height: 10rem;
+    width: 20rem;
+    
+    background: linear-gradient(87.66deg, #A24598 3.53%, #F7618B 79.8%, #2A7AFF 100.6%);
+    mix-blend-mode: normal;
+    opacity: 0.15;
+    filter: blur(101.394px);
+}
+
+#shape-first {
+    position: absolute;
+    z-index: -2;
+    top: 0px;
+    left: 0px;
+    height:100vh;
+    width: 100%;
+}
+
+#shape-two {
+    position: absolute;
+    z-index: -3;
+    top: 0px;
+    left:  0px;
+    height: 100vh;
+    width: 100%;
+}
+
+.fixed-svg-height {
+    max-height: -webkit-fill-available;
 }
