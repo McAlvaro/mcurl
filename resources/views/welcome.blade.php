@@ -36,7 +36,7 @@
                         </ol>
                     </div>
                     <div class="ml-7 mt-7">
-                        <button class="m-text-primary text-xl font-semibold m-rounded-full px-7 py-2.5 text-center bg-gradient-to-tr m-from-pink m-to-blue  " >Get Started for Free</button>
+                        <button class="m-text-primary text-xl font-semibold m-rounded-full px-7 py-2.5 text-center bg-gradient-to-tr m-from-pink m-to-blue" >Get Started for Free</button>
                     </div>
                </div>  
            </div>
