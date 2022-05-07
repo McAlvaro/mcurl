@@ -29,8 +29,8 @@
                         </div>
                         @else
 
-                        <a href="#" class="bg-transparent m-text-secondary px-3 py-2 rounded-md text-sm font-medium hover:m-bg-primary-1 hover:m-text-primary" >Sign Up</a>
-                        <a href="#" class="bg-transparent m-text-secondary px-3 py-2 rounded-md text-sm font-medium hover:m-bg-primary-1 hover:m-text-primary" >Sign In</a>
+                        <a href="{{ route('register') }}" class="bg-transparent m-text-secondary px-3 py-2 rounded-md text-sm font-medium hover:m-bg-primary-1 hover:m-text-primary" >Sign Up</a>
+                        <a href="{{ route('login') }}" class="bg-transparent m-text-secondary px-3 py-2 rounded-md text-sm font-medium hover:m-bg-primary-1 hover:m-text-primary" >Sign In</a>
 
                         @endauth
                     </div>

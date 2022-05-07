@@ -29,6 +29,10 @@
     background-color: #253659 !important;
 }
 
+.m-bg-primary-3 {
+    background-color: #263F57 !important;
+}
+
 .m-text-primary {
     color: white !important;
 }
@@ -39,6 +43,10 @@
 
 .m-text-special {
     color: #2A4560;
+}
+
+.m-text-dark {
+    color: #101F2D;
 }
 
 .hover\:m-bg-primary-1:hover {

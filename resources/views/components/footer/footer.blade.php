@@ -1,6 +1,6 @@
 <footer class="footer m-bg-dark-primary absolute h-9 bottom-0 w-full mt-10 ">
     <div class="h-full w-full container m-text-special flex justify-between items-center  ">
-        <p class="font-semibold text-xs md:text-base pl-1 md:pl-0" >Copyright &copy 2021 | Mc Alvaro</p>
+        <p class="font-semibold text-xs md:text-base pl-1 md:pl-0" >Copyright &copy <?php echo date("Y"); ?> | Mc Alvaro</p>
         <div class="flex items-center">
             <div class="mr-2">
                 <a href="https://www.youtube.com/channel/UCrdfi41Qc5H7oFat-GkTR5A" target="_blank" >
