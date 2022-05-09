@@ -11048,6 +11048,9 @@ select {
 .h-6 {
   height: 1.5rem;
 }
+.h-96 {
+  height: 24rem;
+}
 .h-8 {
   height: 2rem;
 }
@@ -11080,6 +11083,9 @@ select {
 }
 .w-8 {
   width: 2rem;
+}
+.w-52 {
+  width: 13rem;
 }
 .max-w-7xl {
   max-width: 80rem;
@@ -11139,6 +11145,9 @@ select {
 .flex-col {
   flex-direction: column;
 }
+.content-center {
+  align-content: center;
+}
 .items-start {
   align-items: flex-start;
 }
@@ -11153,6 +11162,9 @@ select {
 }
 .justify-between {
   justify-content: space-between;
+}
+.justify-items-center {
+  justify-items: center;
 }
 .space-x-8 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
@@ -11321,6 +11333,9 @@ select {
 .pt-6 {
   padding-top: 1.5rem;
 }
+.pt-8 {
+  padding-top: 2rem;
+}
 .pt-2 {
   padding-top: 0.5rem;
 }
@@ -11344,9 +11359,6 @@ select {
 }
 .pl-1 {
   padding-left: 0.25rem;
-}
-.pt-8 {
-  padding-top: 2rem;
 }
 .text-center {
   text-align: center;
@@ -11591,6 +11603,12 @@ select {
 .m-w-50 {
     width: 50%;
 }
+.m-w-100 {
+    width: 100%;
+}
+.m-mt-20 {
+    margin-top: 20%;
+}
 .m-container{
     max-width: 80rem ;
     margin-left: auto;
@@ -11608,6 +11626,9 @@ select {
 }
 .m-h-3r {
     height: 30rem;
+}
+.m-h-120 {
+    height: 45rem;
 }
 #shadow-first {
     position: absolute;
@@ -11656,6 +11677,19 @@ select {
     left:  0px;
     height: 100vh;
     width: 100%;
+}
+#shape-left {
+    position: absolute;
+    z-index: -2;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+}
+#shape-right {
+    position: absolute;
+    z-index: -3;
+    bottom: -0px;
+    right: 0px;
 }
 .fixed-svg-height {
     max-height: -webkit-fill-available;
@@ -11875,6 +11909,14 @@ select {
 
   .sm\:pt-6 {
     padding-top: 1.5rem;
+  }
+
+  .sm\:pt-8 {
+    padding-top: 2rem;
+  }
+
+  .sm\:pt-24 {
+    padding-top: 6rem;
   }
 
   .sm\:pt-0 {

@@ -65,6 +65,13 @@
 .m-w-50 {
     width: 50%;
 }
+.m-w-100 {
+    width: 100%;
+}
+
+.m-mt-20 {
+    margin-top: 20%;
+}
 
 .m-container{
     max-width: 80rem ;
@@ -86,6 +93,10 @@
 
 .m-h-3r {
     height: 30rem;
+}
+
+.m-h-120 {
+    height: 45rem;
 }
 
 #shadow-first {
@@ -138,6 +149,19 @@
     left:  0px;
     height: 100vh;
     width: 100%;
+}
+#shape-left {
+    position: absolute;
+    z-index: -2;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+}
+#shape-right {
+    position: absolute;
+    z-index: -3;
+    bottom: -0px;
+    right: 0px;
 }
 
 .fixed-svg-height {
