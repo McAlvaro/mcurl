@@ -10,8 +10,8 @@
 
             <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-between">
                 <div class="flex-shrink-0 flex items-center">
-                    <img class="block lg:hidden h-8 w-auto" src="{{ Storage::url('short_mcurl_logo.svg') }}" alt="logo">
-                    <img class="hidden lg:block h-8 w-auto" src="{{ Storage::url('mcurl_logo.svg') }}" alt="LogoLG">
+                    <a href="/"><img class="block lg:hidden h-8 w-auto" src="{{ Storage::url('short_mcurl_logo.svg') }}" alt="logo"></a>
+                    <a href="/"><img class="hidden lg:block h-8 w-auto" src="{{ Storage::url('mcurl_logo.svg') }}" alt="LogoLG"></a>
                 </div>
                 <div class="hidden sm:block sm:ml-6">
                     <div class=" flex space-x-4">

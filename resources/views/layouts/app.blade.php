@@ -20,7 +20,7 @@
 
     </head>
     <body style="background-color: #102131;" class="font-sans antialiased">
-        <div class="min-h-screen">
+        <div style="max-height: 100%;" class=" h-screen min-h-screen max-h-screen">
            @include('components.nav.nav') 
             {{-- <img id="shape-two" src="{{ Storage::url('BG.png') }}" alt=""> --}}
             {{-- <img id="shape-first" src="{{ Storage::url('BG2.png') }}" alt=""> --}}

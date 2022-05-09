@@ -8,6 +8,13 @@ use Illuminate\Support\Facades\DB;
 
 class UrlController extends Controller
 {
+    public function index (Request $request) {
+
+        $urls = Url::where('user_id', auth()->user()->id)->get();
+
+        return view('dashboard', compact('urls'));
+
+    }
 
     public function show( Request $request, $code ){
 

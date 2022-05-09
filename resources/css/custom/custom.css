@@ -69,6 +69,13 @@
     width: 100%;
 }
 
+.m-max-h-25r {
+    max-height: 25.3rem;
+}
+ .m-h-25r {
+    height: 25.3rem;
+}
+
 .m-mt-20 {
     margin-top: 20%;
 }
@@ -86,9 +93,16 @@
   --tw-gradient-from: #f7618b;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(247 97 139 / 0));
 }
+.hover\:m-from-pink:hover {
+  --tw-gradient-from: #fb799d;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(251 121 157 / 0));
+}
 
 .m-to-blue {
   --tw-gradient-to: #2a7aff;
+}
+.hover\:m-to-blue:hover {
+  --tw-gradient-to: #5090fb;
 }
 
 .m-h-3r {

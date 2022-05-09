@@ -10,7 +10,7 @@ class Url extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['url', 'user_id'];
+    protected $fillable = ['url', 'short_url','user_id'];
 
     public function user(){
         return $this->belongsTo(User::class);
