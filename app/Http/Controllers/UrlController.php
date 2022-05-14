@@ -37,7 +37,7 @@ class UrlController extends Controller
         $url = $url->short_url( $request->long_url );
 
         return response()->json([
-            'short_url' => env('APP_URL') . '/' . $url
+            'short_url' => env('APP_DOMAIN') . '/' . $url
         ]);
 
     }
