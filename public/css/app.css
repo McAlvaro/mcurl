@@ -10948,6 +10948,9 @@ select {
 .float-right {
   float: right;
 }
+.m-0 {
+  margin: 0px;
+}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -11021,6 +11024,9 @@ select {
 }
 .block {
   display: block;
+}
+.inline {
+  display: inline;
 }
 .flex {
   display: flex;
@@ -11218,8 +11224,8 @@ select {
 .overflow-y-scroll {
   overflow-y: scroll;
 }
-.whitespace-nowrap {
-  white-space: nowrap;
+.text-ellipsis {
+  text-overflow: ellipsis;
 }
 .break-all {
   word-break: break-all;
@@ -11298,14 +11304,24 @@ select {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
 .bg-gradient-to-tr {
   background-image: linear-gradient(to top right, var(--tw-gradient-stops));
+}
+.bg-clip-text {
+  -webkit-background-clip: text;
+          background-clip: text;
 }
 .fill-current {
   fill: currentColor;
 }
 .p-2 {
   padding: 0.5rem;
+}
+.p-0 {
+  padding: 0px;
 }
 .p-6 {
   padding: 1.5rem;
@@ -11421,13 +11437,13 @@ select {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
-}
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 .font-medium {
   font-weight: 500;
@@ -11437,9 +11453,6 @@ select {
 }
 .font-light {
   font-weight: 300;
-}
-.font-bold {
-  font-weight: 700;
 }
 .font-extrabold {
   font-weight: 800;
@@ -11489,6 +11502,9 @@ select {
 .text-gray-900 {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+.text-transparent {
+  color: transparent;
 }
 .text-green-600 {
   --tw-text-opacity: 1;
@@ -11587,6 +11603,12 @@ select {
 }
 .ease-in {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+.line-clamp-1 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
 }
 /* Custom Css */
 .container {
@@ -11771,6 +11793,12 @@ select {
   border-radius: 100px;
   background-image: linear-gradient(180deg, #d0368a 0%, #708ad4 99%);
   box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+}
+.m-text-blue-2 {
+    color: #708ad4;
+}
+.m-text-pink {
+    color: linear-gradient(180deg, #d0368a 0%, #708ad4 99%) ;
 }
 .hover\:border-gray-300:hover {
   --tw-border-opacity: 1;
