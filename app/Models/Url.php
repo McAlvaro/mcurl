@@ -72,4 +72,10 @@ class Url extends Model
         return $date_formatted;
     }
 
+    public function incrementClickCounter() {
+        $this->click_counter = $this->click_counter + 1;
+        
+        return $this;
+    }
+
 }

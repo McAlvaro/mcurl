@@ -3,6 +3,8 @@
 namespace App\Services;
 
 use App\Models\Url;
+use Exception;
+use Illuminate\Support\Facades\Log;
 
 class GetDataUrl {
 
@@ -26,12 +28,20 @@ class GetDataUrl {
     }
 
     public function getMetaTitleUrl(){
+        
+        try {
 
-        $content = file_get_contents( $this->model->url );
+            $content = file_get_contents( $this->model->url );
 
-        $title = $this->getMetaTitle($content);
+            $title = $this->getMetaTitle($content);
 
-        return $title ? $title : '';
+            return $title ? $title : '';
+        } catch(Exception $ex) {
+            Log::debug('Ocurrio un Error al obtener el meta title: ' . $ex->getMessage() );
+            
+            return "";
+
+        }
 
     }
 

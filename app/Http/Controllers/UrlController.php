@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Jobs\RegisterVisit;
 use App\Models\Url;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -18,9 +19,11 @@ class UrlController extends Controller
 
     public function show( Request $request, $code ){
 
-        $url = DB::table('urls')->where('code', $code)->first();
+        $url = Url::where('code', $code)->first();
 
         if( $url ){
+
+            RegisterVisit::dispatch($url, $request->getClientIp());
 
             return redirect()->away($url->url);
 
