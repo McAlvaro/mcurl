@@ -45,7 +45,7 @@ class RegisterVisit implements ShouldQueue
 
         $visit = Visit::create([
             'url_id' => $this->url->id,
-            'ip_address' => '181.188.176.161'
+            'ip_address' => $this->client_ip
         ]);
 
         $data = $visit->service()->getVisitData();
