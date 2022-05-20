@@ -18,6 +18,8 @@
         <!-- Scripts -->
         {{-- <script src="{{ asset('js/app.js') }}" defer></script> --}}
 
+        @livewireStyles
+
     </head>
     <body style="background-color: #102131;" class="font-sans antialiased">
         <div style="max-height: 100%;" class=" h-screen min-h-screen max-h-screen">
@@ -57,5 +59,7 @@
         </div>
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}" defer></script>
+
+        @livewireScripts
     </body>
 </html>
