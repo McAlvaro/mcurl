@@ -17,8 +17,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+Route::get('/dashboard', 'App\Http\Controllers\UrlController@index')->middleware(['auth'])->name('dashboard');
 
 require __DIR__.'/auth.php';
+
+Route::group(['namespace' => 'App\Http\Controllers'], function(){
+
+    Route::get('{code}', 'UrlController@show')->name('url.show');
+
+    Route::post('url', 'UrlController@store')->name('url.store');
+
+});

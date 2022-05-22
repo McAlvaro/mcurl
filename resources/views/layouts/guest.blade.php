@@ -16,9 +16,21 @@
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}" defer></script>
     </head>
-    <body>
+    <body style="background-color: #102131;">
         <div class="font-sans text-gray-900 antialiased">
-            {{ $slot }}
+            <div>
+                <div id="shape-left">
+                    <x-bg.left-bg class="h-96 w-auto"/>
+                </div>
+                <div id="shape-right">
+                    <x-bg.right-bg  class="m-h-120" />
+                </div></div>
+                <main>
+                    {{ $slot }}
+                </main>
+                @include('components.footer.footer')
+            </div>
+            
         </div>
     </body>
 </html>

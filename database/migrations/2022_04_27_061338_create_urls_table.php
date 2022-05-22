@@ -15,6 +15,10 @@ class CreateUrlsTable extends Migration
     {
         Schema::create('urls', function (Blueprint $table) {
             $table->id();
+            $table->string('code', 100)->unique()->nullable();
+            $table->string('url', 600);
+            $table->dateTime('expiration_at')->nullable();
+            $table->unsignedBigInteger('user_id');
             $table->timestamps();
         });
     }
