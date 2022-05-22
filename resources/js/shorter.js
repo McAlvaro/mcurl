@@ -19,6 +19,7 @@ window.shorter = {
 
                 document.getElementById('short_url').value = response.data.short_url;
 
+                //Emit Event
                 Livewire.emit('urlAdded', true);
 
             }).catch( function(error) {
