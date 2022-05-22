@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Respositories;
+namespace App\Repositories;
 
 use App\Models\Url;
 
-class UrlRespository {
+class UrlRepository {
     
     protected $provider = Url::class;
 
