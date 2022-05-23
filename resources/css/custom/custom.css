@@ -74,7 +74,7 @@
 }
 
 .m-max-h-25r {
-    max-height: 30rem;
+    max-height: calc( 100vh - 200px );
 }
  .m-h-25r {
     height: 25.3rem;
@@ -212,4 +212,14 @@
 
 .m-text-pink {
     color: linear-gradient(180deg, #d0368a 0%, #708ad4 99%) ;
+}
+
+.m-hr-secondary {
+    border-top: 0.5px solid #7887A7 !important;
+}
+
+.m-border-t {
+    
+    border-top: 1px solid #7887A7;
+
 }

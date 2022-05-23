@@ -15,30 +15,25 @@
 
                     </div>
 
-                    <div id="short_url_container" class="flex flex-row" style="display: none;">
-                        <div class="flex flex-row">
-                        <div class="flex flex-row w-11/12">
-                        <input id="title" type="text" placeholder="" class="w-1/2 px-4 mx-2 rounded">
-                        <input id="short_url" type="text" placeholder="" class="w-1/2 px-4 mx-2  rounded" onclick="shorter.copy_url()">
-                        </div>
-                        <div class="w-1/12">
-                        <button class="bg-gray-800 ml-4 w-auto px-3 py-2 font-semibold text-white rounded" onclick="shorter.short_url()" > <span>Save</span> </button>
-                        </div>
+                </div>
+            </div>
+            <hr class="m-hr-secondary">
+            <div class="flex flex-row">
+                <div class="w-2/5">
+                    <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+                        <div class="w-full px-2 mt-4 m-max-h-25r m-bg-primary-3 overflow-y-scroll custom-scroll">
+
+                            <livewire:dashboard.list-urls/>
+                        </div> 
+                    </div>
+                </div>
+                <div class="w-3/5">
+                    <div class="min-w-full max-w-full">
+                        <div class="mt-3 px-4 py-5">
+                            <livewire:dashboard.url-details/>
                         </div>
                     </div>
-
                 </div>
-            </div>
-            <hr>
-            <div class="w-2/5">
-                <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-                    <div class="w-full px-2 mt-4 m-max-h-25r m-bg-primary-3 overflow-y-scroll custom-scroll">
-
-                        <livewire:dashboard.list-urls/>
-                    </div> 
-                </div>
-            </div>
-            <div class="w-3/5">
             </div>
         </div>
     </div>

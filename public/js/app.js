@@ -5032,10 +5032,11 @@ window.shorter = {
       axios.post('/url', {
         long_url: long_url
       }).then(function (response) {
-        document.getElementById('long_url').value = '';
-        document.getElementById('short_url_container').style.display = "block";
-        document.getElementById('create_container').style.display = "none";
-        document.getElementById('short_url').value = response.data.short_url;
+        document.getElementById('long_url').value = ''; // document.getElementById('short_url_container').style.display = "block";
+        // document.getElementById('create_container').style.display = "none";
+        // document.getElementById('short_url').value = response.data.short_url;
+        //Emit Event
+
         Livewire.emit('urlAdded', true);
       })["catch"](function (error) {
         console.log(error);

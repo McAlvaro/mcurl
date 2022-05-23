@@ -21,11 +21,12 @@ class ListUrls extends Component
 
     /* } */
 
-    public function setUrlSelected ( $post_id ){
-        Log::debug('Set Url: ' . $post_id);
-        $this->url_selected = $post_id;
+    public function setUrlSelected ( $url_id ){
+        Log::debug('Set Url: ' . $url_id);
+        $this->url_selected = $url_id;
         
         /* $this->emitSelf('urlAdded'); */
+        $this->emit('getDetail', $url_id );
 
     }
 
@@ -36,7 +37,13 @@ class ListUrls extends Component
         $urls = $this->url_repo->getAll( auth()->user()->id );
 
         if( ($urls && is_null($this->url_selected)) || $is_new ) {
-            $this->url_selected = $urls->first()->id;
+            /* $this->url_selected = $urls->first()->id; */
+
+            $url_id = $urls->first()->id;
+            Log::debug('Url Fist or New :' . $url_id);
+            $this->setUrlSelected( $url_id );
+
+            /* $this->emit('getDetail', $this->url_selected ); */
         }
 
         return view('livewire.dashboard.list-urls', compact('urls'));

@@ -9,7 +9,7 @@
         </thead>
         <tbody>
             @foreach( $urls as $url )
-                <tr class="border-t @if( $url_selected == $url->id ) m-bg-primary-1 @endif hover:m-bg-primary-1" wire:click="setUrlSelected({{ $url->id }})">
+                <tr class="m-border-t @if( $url_selected == $url->id ) m-bg-primary-1 @endif hover:m-bg-primary-1" wire:click="setUrlSelected({{ $url->id }})">
                     <td scope="row" class="px-6 py-4 m-text-primary font-medium">
                         <a href="#">
                             <div class="w-full h-full">
