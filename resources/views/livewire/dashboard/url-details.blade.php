@@ -35,7 +35,13 @@
         </div>
         <hr class="m-hr-secondary">
         <div class="my-3">
-            
+            <div class="flex flex-row justify-start">
+                <p class="text-sm font-bold m-text-primary mr-1">Compartir en: </p>
+                <x-socialButtons.facebook/>
+                <x-socialButtons.whatsapp/>
+                <x-socialButtons.twitter/>
+                <x-socialButtons.qr/>
+            </div>
         </div>
         <hr class="m-hr-secondary" >
         
