@@ -44,6 +44,11 @@
             </div>
         </div>
         <hr class="m-hr-secondary" >
+        <div class="mt-2">
+            <span class="m-text-secondary font-extralight text-sm pt-0 mt-0 mr-2">TOTAL CLICKS:</span>
+            <span class="m-text-primary text-xl font-extrabold">{{ $url->click_counter }}</span> 
+            <span class="m-text-primary "> <i class="fa-solid fa-chart-simple"></i></span>
+        </div>
         
     </div>
     
