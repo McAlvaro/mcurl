@@ -49,6 +49,9 @@
             <span class="m-text-primary text-xl font-extrabold">{{ $url->click_counter }}</span> 
             <span class="m-text-primary "> <i class="fa-solid fa-chart-simple"></i></span>
         </div>
+        <div class="mt-2">
+           <livewire:visit-chart/> 
+        </div>
         
     </div>
     

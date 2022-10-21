@@ -28,6 +28,8 @@ class ListUrls extends Component
         /* $this->emitSelf('urlAdded'); */
         $this->emit('getDetail', $url_id );
 
+        $this->emit('getVisit', $url_id);
+
     }
 
 

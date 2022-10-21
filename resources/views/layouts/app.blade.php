@@ -20,6 +20,8 @@
 
         @livewireStyles
 
+        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
     </head>
     <body style="background-color: #102131;" class="font-sans antialiased">
         <div style="max-height: 100%;" class=" h-screen min-h-screen max-h-screen">
@@ -59,6 +61,10 @@
         </div>
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}" defer></script>
+
+        <!-- Chart bar -->
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
         @livewireScripts
     </body>

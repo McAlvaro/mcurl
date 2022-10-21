@@ -20,6 +20,11 @@ class UrlDetails extends Component
         $this->url_repo = $url_repo;
         
         $url = $this->url_repo->getOne( auth()->user()->id );
+        
+         if( !empty($url) ) {
+             Log::debug('Get Grafica: ' . $url->id);
+             $this->emit('getVisit', $url->id);
+         }
 
         $this->url = $url;
 
@@ -37,6 +42,7 @@ class UrlDetails extends Component
         if( ! empty($url) ){
             $this->url = $url;
             Log::debug('Set Url Data');
+            //$this->emit('getVisit', $url->id);
         }
 
     }
